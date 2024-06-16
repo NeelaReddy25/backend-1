@@ -19,8 +19,8 @@ pipeline {
             steps {
                 sh """
                 npm install
-                echo "application version: $appVersion
                 ls -ltr
+                echo "application version: $appVersion"
                 """
             }
         }
