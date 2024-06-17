@@ -8,7 +8,7 @@ pipeline {
         ansiColor('xterm')
     }
     environment {
-        def appVersion = ' ' //variable declaration
+        def appVersion = '' //variable declaration
     }
     stages {
         stage('read the version') {
