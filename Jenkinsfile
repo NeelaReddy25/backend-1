@@ -33,7 +33,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                zip -q -r backend-${appVersion}.zip * -x Jenkinsfile -x backend-${appVersion}.zip
+                zip -q -r backend-1-${appVersion}.zip * -x Jenkinsfile -x backend-1-${appVersion}.zip
                 ls -ltr
                 """
             }
@@ -50,9 +50,9 @@ pipeline {
                         repository: 'backend',
                         credentialsId: 'nexus-auth',
                         artifacts: [
-                            [artifactId: "backend",
+                            [artifactId: "backend-1",
                             classifier: '',
-                            file: "backend-" + "${appVersion}" + '.zip',
+                            file: "backend-1-" + "${appVersion}" + '.zip',
                             type: 'jar']
                         ]
                     )
