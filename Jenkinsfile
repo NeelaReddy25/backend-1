@@ -5,4 +5,7 @@
 def configMap = [
     type: "nodejsEKS"
     component: "backend"
+    project: "expense"
 ]
+
+pipielineDecission.decidepipeline(configMap)
