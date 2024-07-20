@@ -9,4 +9,4 @@ COPY package.json .
 COPY *.js /opt/server/
 RUN npm install
 USER expense
-CMD ["node","index.js"]
+CMD ["node","indexddddds.js"]
